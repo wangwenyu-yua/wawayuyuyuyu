@@ -199,3 +199,10 @@ sex=input("请输入您的性别")
 userinfo={}
 userinfo.update(name=name,sex=sex,age=age)
 print(userinfo)
+
+
+# 元组 
+# 数组 列表   list
+# 字典
+
+"""判断"""
