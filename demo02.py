@@ -125,26 +125,94 @@ else:
 # zon={}
 # zon=update(name=socre)
 
-high={}#定义一个空字典来存储大于60的信息
+# high={}#定义一个空字典来存储大于60的信息
 
-low={}#定义一个空字典 用来存储小于60的信息
-studentlist=["王1", "王2","王3","王4", "王5","王6","王7", "王8","王9", "压缩",]
-a=0#定义一个变量来用来控制数组的下标变化
-while a<len(studentlist):#因为所以的人信息的录入，都要用input 所以写了循环，len判断了数组长度 总长度-1就是最大的下标
-   chengji= int(input("请输入"+studentlist[a]+"成绩"))#获取这个录入信息 并且为了方便判断转换了格式 字符串的拼接
-   if chengji>=60:#判断分数
-        high[studentlist[a]]=chengji#存到字典中
-   else:
-        low[studentlist[a]]=chengji
-   a=a+1#用来控制下标变化的，每一次循环都增1
-print(high,"成绩还不错的")
-print(low,"成绩不太行")
+# low={}#定义一个空字典 用来存储小于60的信息
+# studentlist=["王1", "王2","王3","王4", "王5","王6","王7", "王8","王9", "压缩",]
+# a=0#定义一个变量来用来控制数组的下标变化
+# while a<len(studentlist):#因为所以的人信息的录入，都要用input 所以写了循环，len判断了数组长度 总长度-1就是最大的下标
+#    chengji= int(input("请输入"+studentlist[a]+"成绩"))#获取这个录入信息 并且为了方便判断转换了格式 字符串的拼接
+#    if chengji>=60:#判断分数
+#         high[studentlist[a]]=chengji#存到字典中
+#    else:
+#         low[studentlist[a]]=chengji
+#    a=a+1#用来控制下标变化的，每一次循环都增1
+# print(high,"成绩还不错的")
+# print(low,"成绩不太行")
    
 
 
+#6.15
+"""
+for循环:通过遍历来实现的
+range()方法
+
+"""
+# a="您好  今天您学习了吗"
+# for i in a:
+#     print(i)
+
+
+# b=list(range(0,100,2))#自动生成了一个数列   list代表数组  步进/步长
+# print(i)
+
+# for i in range(10):
+#     print(i)
+
+
+# high={}#定义一个空字典来存储大于60的信息
+
+# low={}#定义一个空字典 用来存储小于60的信息
+# studentlist=["王1", "王2","王3","王4", "王5","王6","王7", "王8","王9", "压缩",]
+# a=0#定义一个变量来用来控制数组的下标变化
+# while a<len(studentlist):#因为所以的人信息的录入，都要用input 所以写了循环，len判断了数组长度 总长度-1就是最大的下标
+#    chengji= int(input("请输入"+studentlist[a]+"成绩"))#获取这个录入信息 并且为了方便判断转换了格式 字符串的拼接
+#    if chengji>=60:#判断分数
+#         high[studentlist[a]]=chengji#存到字典中
+#    else:
+#         low[studentlist[a]]=chengji
+#    a=a+1#用来控制下标变化的，每一次循环都增1
+# print(high,"成绩还不错的")
+# print(low,"成绩不太行")
+   
+
+
+#练习:打印九九乘法表
+
+
+# for j  in range(1,10):
+#     for i in range(1,j+1):
+#         print(i,"x",j,"=",i*j,end=" ")#end不会换行 
+#     print()
+
+
+for red in range(0,31):
+    for red in range(red,red+1):
+        if red==30:
+            print("红灯结束啦")
+        else:
+            print(red+1,end="...")
+for green in range(1,36):
+    for green in range(green,green+1):
+        if green==35:
+            print("绿灯结束了 请等待")
+        else:
+            print(green+1,end="...")
+for yellow in range(0,4):
+    for yellow in range(yellow,yellow+1):
+        if yellow==3:
+            print("黄灯结束！！！")
+        else:
+            print(yellow+1,end="...")
 
 
 
+
+#end示例
+# a=["王1", "王2","王3","王4", "王5","王6","王7", "王8","王9", "压缩",]
+# for i in a:
+#     print(i,end="||")    
+#     print("---------------------------")
 
 
 
