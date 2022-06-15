@@ -125,17 +125,18 @@ else:
 # zon={}
 # zon=update(name=socre)
 
-high={}
-low={}
+high={}#定义一个空字典来存储大于60的信息
+
+low={}#定义一个空字典 用来存储小于60的信息
 studentlist=["王1", "王2","王3","王4", "王5","王6","王7", "王8","王9", "压缩",]
-a=0
-while a<len(studentlist):
-   chengji= int(input("请输入"+studentlist[a]+"成绩"))
-   if chengji>=60:
-        high[studentlist[a]]=chengji
+a=0#定义一个变量来用来控制数组的下标变化
+while a<len(studentlist):#因为所以的人信息的录入，都要用input 所以写了循环，len判断了数组长度 总长度-1就是最大的下标
+   chengji= int(input("请输入"+studentlist[a]+"成绩"))#获取这个录入信息 并且为了方便判断转换了格式 字符串的拼接
+   if chengji>=60:#判断分数
+        high[studentlist[a]]=chengji#存到字典中
    else:
         low[studentlist[a]]=chengji
-   a=a+1
+   a=a+1#用来控制下标变化的，每一次循环都增1
 print(high,"成绩还不错的")
 print(low,"成绩不太行")
    
