@@ -184,35 +184,44 @@ range()方法
 #     for i in range(1,j+1):
 #         print(i,"x",j,"=",i*j,end=" ")#end不会换行 
 #     print()
-
-
-for red in range(0,31):
-    for red in range(red,red+1):
-        if red==30:
-            print("红灯结束啦")
-        else:
-            print(red+1,end="...")
-for green in range(1,36):
-    for green in range(green,green+1):
-        if green==35:
-            print("绿灯结束了 请等待")
-        else:
-            print(green+1,end="...")
-for yellow in range(0,4):
-    for yellow in range(yellow,yellow+1):
-        if yellow==3:
-            print("黄灯结束！！！")
-        else:
-            print(yellow+1,end="...")
-
-
-
-
 #end示例
 # a=["王1", "王2","王3","王4", "王5","王6","王7", "王8","王9", "压缩",]
 # for i in a:
 #     print(i,end="||")    
-#     print("---------------------------")
+# #     print("---------------------------")
+
+# for red in range(0,31):
+#     for red in range(red,red+1):
+#         if red==30:
+#             print("红灯结束啦")
+#         else:
+#             print(red+1,end="...")
+# for green in range(1,36):
+#     for green in range(green,green+1):
+#         if green==35:
+#             print("绿灯结束了 请等待")
+#         else:
+#             print(green+1,end="...")
+# for yellow in range(0,4):
+#     for yellow in range(yellow,yellow+1):
+#         if yellow==3:
+#             print("黄灯结束！！！")
+#         else:
+#             print(yellow+1,end="...")
+
+
+
+
+
+# """
+# 红绿灯的实现
+# """
+
+# light={"红灯":35,"绿灯":30,"黄灯":5}
+# while True:
+#     for i in light:
+#         for j in range(light[i]):
+#             print(i,"倒计时还有",light[i]-j,"秒")
 
 
 
@@ -220,4 +229,34 @@ for yellow in range(0,4):
 
 
 
-    
+
+
+
+
+"""
+循环知识点  continue ：跳出循环
+ 
+"""
+
+#continue例子
+"""
+for i in  range(10):
+    if i==4:  #不运行4 跳出循环
+        continue  # 当i等于4时 不运行后面的代码  跳过本次循环
+    print(i)
+"""
+
+#break 例子
+"""
+for i in  range(10):
+    if i==4: 
+       break   #终止循环  不会对嵌套的循环生效 直接跳过整个循环 
+    print(i)
+"""
+
+
+
+a=(1,2,"nihao","True","哈哈哈哈哈","nihao")
+print(a[4],a[3])
+print (a.index("nihao"))
+print(a.index("哈哈哈哈哈"))
