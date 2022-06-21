@@ -9,6 +9,7 @@
 
 
 # def checkname(username):
+
 #     """
 #    自动判断  账号长度是5-8位  密码6-12位并且账号必须小写字母
 # """
@@ -57,8 +58,7 @@
 
 
 
-def checkname(username):
-    """
+"""
    自动判断  账号长度是5-8位  密码6-12位并且账号必须小写字母
 """
     # if len(username)>=5 and len(username) <= 8:
@@ -70,6 +70,8 @@ def checkname(username):
     # return "您的账号不符合规则。请输入5-8位账号"
 
     
+def checkname(username):
+
     username=input("请输入您的账号")
     password=input("请输入您的密码")
     if checkname(username)==True:
