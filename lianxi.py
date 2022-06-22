@@ -115,5 +115,19 @@ else:
 
 """
 定义：定义一个方法来判断用户输入的账号和密码是否符合标准
-
+自动判断  账号长度是5-8位  密码6-12位并且账号必须小写字母
 """
+def  checkname(username,password):
+# """
+#    自动判断  账号长度是5-8位  密码6-12位并且账号必须小写字母
+# """
+    if len(username)>=5 and len(username) <= 8:
+        if username[0] in "qwertyuioplkjhgfdsazxcvbnm":
+            if len(password)>=6 and len(password)<=12:
+                return True
+            else:
+                return"密码不符合规范"
+        else:
+            return "账号信息必须以小写字母开头"
+  
+    return "您的账号不符合规则。请输入5-8位账号"
